@@ -1,0 +1,5 @@
+Dark Gray #191E29 
+Light Blue #132D46
+Lime #01C38D
+Light Gray #696E79
+White #FFFFFF 

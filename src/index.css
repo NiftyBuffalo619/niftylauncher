@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'TT Commons DemiBold';
+    src: url('../public/fonts/TT\ Commons\ DemiBold.otf');
+}
+
+* {
+    font-family: 'TT Commons DemiBold';
+    color:white;
+}
+
+body {
+    margin:0;
+    padding:0;
+    background-color: #132D46;
+}
