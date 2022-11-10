@@ -2,18 +2,18 @@ import logo from './logo.svg';
 import './index.css';
 import React, { useState } from 'react';
 import Login from './components/Login';
-import { BrowserWindow as Rounter , Switch , Route } from 'react-router-dom';
+import { Routes , Route } from "react-router-dom";
+import { signInWithGoogle } from './firebase';
 
 
 function App() {
-  const [showLogin , setData] = React.useState(false);
+ // const [showLogin , setData] = React.useState(false);
   return (
     <>
-      <Router>
-        <Switch>
+      <button onClick={signInWithGoogle}>Sign in With Google</button>
+      <Routes>
           <Route path="/" component={Login}/>
-        </Switch>
-      </Router>
+      </Routes>
     </>
   );
 }
