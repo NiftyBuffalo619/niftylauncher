@@ -12,8 +12,16 @@
     color:white;
 }
 
-body {
+/*body {
     margin:0;
     padding:0;
-    background-color: #132D46;
+    background-image: linear-gradient(to right top, #191e29, #192230, #192537, #17293f, #132d46);
+    background-repeat: no-repeat;
+}*/
+html {
+        margin:0;
+        padding:0;
+        /*background-image: linear-gradient(to right top, #191e29, #192230, #192537, #17293f, #132d46);
+        background-repeat: no-repeat;*/
+        background-color: #191E29;
 }

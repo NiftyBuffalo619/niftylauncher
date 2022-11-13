@@ -8,7 +8,7 @@ export default function ShowProfile({ username: username , profile_picture: prof
       <Suspense fallback={<Loading />}>
         <div className='flex-auto items-stretch'>
           <img className="rounded-full" src={localStorage.getItem("profile_picture")} />
-          <p className=''>{localStorage.getItem("name")}</p>
+          <p className='text-lg'>{localStorage.getItem("name")}</p>
         </div>
       </Suspense>
       </div>
