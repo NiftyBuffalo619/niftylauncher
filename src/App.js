@@ -1,18 +1,19 @@
-import logo from './logo.svg';
 import './index.css';
-import React, { useState } from 'react';
+import React, { Suspense, useState } from 'react';
+import { lazy } from 'react';
 import Login from './components/Login';
 import { Routes , Route } from "react-router-dom";
-import { signInWithGoogle } from './firebase';
+import ShowProfile from './components/ShowProfile';
+import Loading from "./components/Loading";
 
 
 function App() {
  // const [showLogin , setData] = React.useState(false);
   return (
     <>
-      <button onClick={signInWithGoogle}>Sign in With Google</button>
       <Routes>
-          <Route path="/" component={Login}/>
+          <Route path="/" element={<Login />}/>
+          <Route path="/home" element={<ShowProfile />}/>
       </Routes>
     </>
   );

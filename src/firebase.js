@@ -1,10 +1,12 @@
 import { initializeApp } from "firebase/app";
 import { getAuth , GoogleAuthProvider , signInWithPopup } from "firebase/auth";
 import ShowProfile from "./components/ShowProfile";
+
 /*import * as dotenv from "dotenv";
 dotenv.config();*/
 
 //const API_KEY = process.env.NODE_ENV;
+
 
 const firebaseConfig = {
 };
